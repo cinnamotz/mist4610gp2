@@ -38,3 +38,98 @@ Overall, this dataset provides a comprehensive view of hate crime incidents in N
 12. Offense Category (string/object): Broader grouping of offenses.
 13. Arrest Date (float64 / nullable): Date of arrest, if applicable.
 14. Arrest Id (string/object): Identifier for associated arrest, if any.
+
+## Questions
+
+Question 1:
+
+How does the total number of misdemeanor and felony hate crimes vary across boroughs over time?
+
+Why it’s important:
+This question is important from a social and public safety perspective because it helps identify which boroughs experience higher levels of hate crime activity and whether those patterns are changing. Tracking this over time can reveal whether certain communities are becoming safer or more at risk.
+
+From an economic standpoint, boroughs with consistently higher crime levels may face reduced investment, lower property values, and negative impacts on local businesses.
+
+Connection to dataset:
+
+Complaint Year Number → captures time trends
+Patrol Borough Name / County → identifies geographic distribution
+Law Code Category Description → filters for misdemeanors and felonies
+
+## Data Manipulations and Calculations
+
+To conduct the analysis, several key data manipulations were performed:
+
+Filtering
+The dataset was filtered to include only records where Law Code Category Description = “Misdemeanor” or “Felony”.
+Purpose: Focus the analysis specifically on offense severity and exclude violations or other categories.
+Grouping and Aggregation
+Data was grouped by:
+Borough (Patrol Borough Name or County)
+Year (Complaint Year Number)
+Offense Type (Misdemeanor vs. Felony)
+A count of incidents was calculated for each group.
+
+Purpose:
+This allows comparison of total offenses across boroughs and years while distinguishing severity.
+
+A calculated field was created to standardize offense categories (e.g., grouping variations into “Misdemeanor” and “Felony”).
+Another calculation could include total offenses per borough-year combination.
+
+Purpose:
+Ensures consistency in categorization and enables accurate aggregation for visualization.
+
+Visualization Preparation
+Data was structured to support a color-coded visualization by year (e.g., using year as a color legend).
+
+Purpose:
+This allows clear visual comparison of trends over time within each borough.
+
+3. Analysis and Results
+Visualization Description
+
+The results were visualized using a grouped bar chart (or heatmap):
+
+X-axis: Boroughs
+Y-axis: Total number of hate crime incidents
+Color coding: Year
+Separate bars or segments distinguish misdemeanors vs. felonies
+Key Findings
+
+1. Uneven Distribution Across Boroughs
+Certain boroughs consistently show higher total counts of hate crimes (both misdemeanors and felonies), indicating geographic concentration.
+
+Implication:
+This suggests the need for targeted law enforcement and community outreach programs in specific areas.
+
+2. Felonies Are Less Frequent but More Concerning
+While misdemeanors make up a larger share of incidents, felonies—though fewer—represent more severe crimes.
+
+Implication:
+Even small increases in felony counts are significant and may indicate escalating violence or risk.
+
+3. Year-to-Year Fluctuations
+Color-coded trends show that hate crime incidents vary by year, with some boroughs experiencing spikes or declines.
+
+Implication:
+These fluctuations may be linked to external social or political events, highlighting the importance of continuous monitoring.
+
+4. Variation in Severity by Borough
+Some boroughs show a higher proportion of felonies relative to misdemeanors compared to others.
+
+Implication:
+This could indicate differences in crime dynamics, enforcement practices, or underlying social tensions across boroughs.
+
+4. Overall Implications
+
+This analysis provides a multidimensional understanding of hate crime patterns, combining:
+
+Geographic insights (borough-level differences)
+Temporal trends (changes over time)
+Severity analysis (misdemeanor vs. felony)
+
+These findings are valuable for:
+
+Law enforcement agencies → better resource allocation
+Policymakers → informed decision-making and interventions
+Communities → increased awareness and advocacy
