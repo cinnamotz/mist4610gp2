@@ -2,11 +2,11 @@
 
 ## Group Members:
 
-1. Donovan D'Silva - 	[repo]()
+1. Donovan D'Silva - 	[repo](https://github.com/donmelsil/MIST-4610-Group-Project-2---Group-7)
 2. Noah Hammond	-[repo](https://github.com/NoahHammond1/Group-Project2)
 3. Chase Lin - [repo](https://github.com/cinnamotz/mist4610gp2)
 4. Krithin Lokasani	- [repo]()
-5. Jessica Ngo -[repo]()
+5. Jessica Ngo -[repo](https://github.com/jn83499/Mist4610_Group-Project2)
 
 ## Dataset and Description
 The dataset, titled “NYPD Hate Crimes”, contains records of reported hate crime incidents investigated by the New York Police Department (NYPD). Each row represents a single complaint, including details about the offense, location, bias motivation, and whether an arrest was made.
