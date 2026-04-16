@@ -60,15 +60,16 @@ Law Code Category Description → filters for misdemeanors and felonies
 
 To conduct the analysis, several key data manipulations were performed:
 
-Filtering
-The dataset was filtered to include only records where Law Code Category Description = “Misdemeanor” or “Felony”.
+Filtering: The dataset was filtered to include only records where Law Code Category Description = “Misdemeanor” or “Felony”.
 Purpose: Focus the analysis specifically on offense severity and exclude violations or other categories.
+
 Grouping and Aggregation
+
 Data was grouped by:
-Borough (Patrol Borough Name or County)
-Year (Complaint Year Number)
-Offense Type (Misdemeanor vs. Felony)
-A count of incidents was calculated for each group.
+- Borough (Patrol Borough Name or County)
+- Year (Complaint Year Number)
+- Offense Type (Misdemeanor vs. Felony)
+- A count of incidents was calculated for each group.
 
 Purpose:
 This allows comparison of total offenses across boroughs and years while distinguishing severity.
@@ -88,7 +89,7 @@ This allows clear visual comparison of trends over time within each borough.
 3. Analysis and Results
 Visualization Description
 
-The results were visualized using a grouped bar chart (or heatmap):
+The results were visualized using a grouped bar chart:
 
 X-axis: Boroughs
 Y-axis: Total number of hate crime incidents
