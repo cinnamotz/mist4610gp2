@@ -41,7 +41,7 @@ Overall, this dataset provides a comprehensive view of hate crime incidents in N
 
 ## Questions
 
-Question 1:
+**Question 1:**
 
 How have hate crimes changed over time in the New York City Boroughs, and what are the biases that effect these changes?
 
@@ -52,7 +52,7 @@ From a cultural standpoint, understanding bias motivations (e.g., race, religion
 
 From an economic perspective, increases in hate crimes in certain boroughs may negatively impact local economies by discouraging business activity, tourism, and residential stability.
 
-Connection to dataset:
+*Connection to dataset:*
 
 Complaint Year Number and Month Number are used to analyze trends over time
 Patrol Borough Name / County are used to compare across NYC boroughs
@@ -60,7 +60,7 @@ Bias Motive Description identify the underlying motivations driving hate crimes
 
 These fields allow for a combined temporal, geographic, and categorical analysis of hate crime patterns.
 
-Question 2:
+**Question 2:**
 
 By focusing on the top 3 biases and boroughs, how effective was law enforcement in terms of their response to these crimes?
 
@@ -71,7 +71,7 @@ From a social trust perspective, the ability (or inability) of law enforcement t
 
 From a cultural and equity standpoint, analyzing response effectiveness across different bias types may reveal disparities in how cases are handled, which could point to systemic challenges or resource gaps.
 
-Connection to dataset:
+*Connection to dataset:*
 
 Bias Motive Description are used to identify the top three most common bias types
 Patrol Borough Name / County are used to identify the top boroughs with the highest incident counts
