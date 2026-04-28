@@ -43,94 +43,43 @@ Overall, this dataset provides a comprehensive view of hate crime incidents in N
 
 Question 1:
 
-How does the total number of misdemeanor and felony hate crimes vary across boroughs over time?
+How have hate crimes changed over time in the New York City Boroughs, and what are the biases that effect these changes?
 
 Why it’s important:
-This question is important from a social and public safety perspective because it helps identify which boroughs experience higher levels of hate crime activity and whether those patterns are changing. Tracking this over time can reveal whether certain communities are becoming safer or more at risk.
+This question is important from a social and cultural perspective because it helps identify which communities are being targeted and how those patterns evolve over time. Changes in hate crime frequency can reflect broader societal trends, such as shifts in public sentiment, major political events, or periods of increased social tension.
 
-From an economic standpoint, boroughs with consistently higher crime levels may face reduced investment, lower property values, and negative impacts on local businesses.
+From a cultural standpoint, understanding bias motivations (e.g., race, religion, sexual orientation) highlights which groups are most vulnerable and can guide advocacy efforts and community support initiatives.
+
+From an economic perspective, increases in hate crimes in certain boroughs may negatively impact local economies by discouraging business activity, tourism, and residential stability.
 
 Connection to dataset:
 
-Complaint Year Number → captures time trends
-Patrol Borough Name / County → identifies geographic distribution
-Law Code Category Description → filters for misdemeanors and felonies
+Complaint Year Number and Month Number are used to analyze trends over time
+Patrol Borough Name / County are used to compare across NYC boroughs
+Bias Motive Description identify the underlying motivations driving hate crimes
+
+These fields allow for a combined temporal, geographic, and categorical analysis of hate crime patterns.
+
+Question 2:
+
+By focusing on the top 3 biases and boroughs, how effective was law enforcement in terms of their response to these crimes?
+
+Why it’s important:
+This question is critical from a legal and public policy perspective because it evaluates the effectiveness of law enforcement responses to hate crimes. Measuring effectiveness (e.g., through arrest rates) helps determine whether justice systems are successfully addressing these incidents.
+
+From a social trust perspective, the ability (or inability) of law enforcement to respond effectively can influence public confidence, especially among communities that are frequently targeted.
+
+From a cultural and equity standpoint, analyzing response effectiveness across different bias types may reveal disparities in how cases are handled, which could point to systemic challenges or resource gaps.
+
+Connection to dataset:
+
+Bias Motive Description are used to identify the top three most common bias types
+Patrol Borough Name / County are used to identify the top boroughs with the highest incident counts
+Arrest Date and Arrest Id are used to determine whether an arrest was made (proxy for law enforcement response effectiveness)
+Complaint Year Number allows us to evaluate the effectiveness over time
+
+These variables enable calculation of arrest rates by bias type and borough, providing a measurable way to assess law enforcement performance.
 
 ## Data Manipulations and Calculations
 
-To conduct the analysis, several key data manipulations were performed:
-
-Filtering: The dataset was filtered to include only records where Law Code Category Description = “Misdemeanor” or “Felony”.
-Purpose: Focus the analysis specifically on offense severity and exclude violations or other categories.
-
-Grouping and Aggregation
-
-Data was grouped by:
-- Borough (Patrol Borough Name or County)
-- Year (Complaint Year Number)
-- Offense Type (Misdemeanor vs. Felony)
-- A count of incidents was calculated for each group.
-
-Purpose:
-This allows comparison of total offenses across boroughs and years while distinguishing severity.
-
-A calculated field was created to standardize offense categories (e.g., grouping variations into “Misdemeanor” and “Felony”).
-Another calculation could include total offenses per borough-year combination.
-
-Purpose:
-Ensures consistency in categorization and enables accurate aggregation for visualization.
-
-Visualization Preparation
-Data was structured to support a color-coded visualization by year (e.g., using year as a color legend).
-
-Purpose:
-This allows clear visual comparison of trends over time within each borough.
-
-3. Analysis and Results
-Visualization Description
-
-The results were visualized using a grouped bar chart:
-
-X-axis: Boroughs
-Y-axis: Total number of hate crime incidents
-Color coding: Year
-Separate bars or segments distinguish misdemeanors vs. felonies
-Key Findings
-
-1. Uneven Distribution Across Boroughs
-Certain boroughs consistently show higher total counts of hate crimes (both misdemeanors and felonies), indicating geographic concentration.
-
-Implication:
-This suggests the need for targeted law enforcement and community outreach programs in specific areas.
-
-2. Felonies Are Less Frequent but More Concerning
-While misdemeanors make up a larger share of incidents, felonies—though fewer—represent more severe crimes.
-
-Implication:
-Even small increases in felony counts are significant and may indicate escalating violence or risk.
-
-3. Year-to-Year Fluctuations
-Color-coded trends show that hate crime incidents vary by year, with some boroughs experiencing spikes or declines.
-
-Implication:
-These fluctuations may be linked to external social or political events, highlighting the importance of continuous monitoring.
-
-4. Variation in Severity by Borough
-Some boroughs show a higher proportion of felonies relative to misdemeanors compared to others.
-
-Implication:
-This could indicate differences in crime dynamics, enforcement practices, or underlying social tensions across boroughs.
-
-4. Overall Implications
-
-This analysis provides a multidimensional understanding of hate crime patterns, combining:
-
-Geographic insights (borough-level differences)
-Temporal trends (changes over time)
-Severity analysis (misdemeanor vs. felony)
-
-These findings are valuable for:
-
-Law enforcement agencies → better resource allocation
-Policymakers → informed decision-making and interventions
-Communities → increased awareness and advocacy
+We only had a single calculated field in our analysis, Arrest Rate. Arrest Rate is calculated by taking the value from count(Arrest Id) and dividing it by count(Full Complaint ID). The reason we wanted to manipulate the data to receive this value was to find a way to quantify the success rate of law enforcement for our second question. This value gives us the rate at which complaint cases are actually pursued compared to a case that is dropped. While a case may be dropped for a multitude of reasons, given the size of out data, this will still be a valuable insight into the success of law enforcement in New York City borroughs.
