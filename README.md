@@ -89,10 +89,10 @@ We only had a single calculated field in our analysis, Arrest Rate. Arrest Rate 
 **Question 1 — How have hate crimes changed over time, and what biases drive them?**
 
 Temporal pattern across boroughs (Images 1 & 3): Every borough shows the same structural shape — a sharp contraction in 2020 consistent with COVID-19 lockdowns reducing public interactions, followed by a sustained and significant escalation from 2021 through 2024. Manhattan South is the standout borough, nearly doubling its complaint count from ~85 (2019) to ~160 (2024). Brooklyn South closely trails, peaking around 155–160. Staten Island remains persistently low (under 25 per year), suggesting geographic clustering of hate-crime activity in the denser, more commercially active parts of the city.
-Bias motives (Images 2 & 3): Anti-Jewish bias is by far the dominant motive — it dwarfs every other category, rising from ~255 complaints in 2019 to a peak of approximately 370 in 2024 before slightly declining. Two secondary spikes stand out with clear social causation:
 
-Anti-Asian surged sharply in 2021, closely tracking the wave of COVID-19 xenophobia documented nationally.
-Anti-Black complaints climbed steadily from 2021–2023, likely reflecting a combination of increased awareness and reporting following the 2020 social justice movement.
+Bias motives (Images 2 & 3): Anti-Jewish bias is by far the dominant motive — it dwarfs every other category, rising from ~255 complaints in 2019 to a peak of approximately 370 in 2024 before slightly declining. Two secondary spikes stand out with clear social causation:
+- Anti-Asian surged sharply in 2021, closely tracking the wave of COVID-19 xenophobia documented nationally.
+- Anti-Black complaints climbed steadily from 2021–2023, likely reflecting a combination of increased awareness and reporting following the 2020 social justice movement.
 
 All other bias categories (Anti-Muslim, Anti-Hispanic, Anti-LGBT mixed group, etc.) remain comparatively low but persistent throughout the period.
 
