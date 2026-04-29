@@ -83,3 +83,26 @@ These variables enable calculation of arrest rates by bias type and borough, pro
 ## Data Manipulations and Calculations
 
 We only had a single calculated field in our analysis, Arrest Rate. Arrest Rate is calculated by taking the value from count(Arrest Id) and dividing it by count(Full Complaint ID). The reason we wanted to manipulate the data to receive this value was to find a way to quantify the success rate of law enforcement for our second question. This value gives us the rate at which complaint cases are actually pursued compared to a case that is dropped. While a case may be dropped for a multitude of reasons, given the size of out data, this will still be a valuable insight into the success of law enforcement in New York City borroughs.
+
+## Analysis and Results
+
+**Question 1 — How have hate crimes changed over time, and what biases drive them?**
+
+Temporal pattern across boroughs (Images 1 & 3): Every borough shows the same structural shape — a sharp contraction in 2020 consistent with COVID-19 lockdowns reducing public interactions, followed by a sustained and significant escalation from 2021 through 2024. Manhattan South is the standout borough, nearly doubling its complaint count from ~85 (2019) to ~160 (2024). Brooklyn South closely trails, peaking around 155–160. Staten Island remains persistently low (under 25 per year), suggesting geographic clustering of hate-crime activity in the denser, more commercially active parts of the city.
+Bias motives (Images 2 & 3): Anti-Jewish bias is by far the dominant motive — it dwarfs every other category, rising from ~255 complaints in 2019 to a peak of approximately 370 in 2024 before slightly declining. Two secondary spikes stand out with clear social causation:
+
+Anti-Asian surged sharply in 2021, closely tracking the wave of COVID-19 xenophobia documented nationally.
+Anti-Black complaints climbed steadily from 2021–2023, likely reflecting a combination of increased awareness and reporting following the 2020 social justice movement.
+
+All other bias categories (Anti-Muslim, Anti-Hispanic, Anti-LGBT mixed group, etc.) remain comparatively low but persistent throughout the period.
+
+**Question 2 — How effective was law enforcement in the top 3 boroughs?**
+
+Overall arrest gap (Images 4, 5 & 6): Across Brooklyn North, Brooklyn South, and Manhattan South, roughly 60–70% of complaints do not result in an arrest — a consistent and concerning enforcement gap. Brooklyn South has the highest complaint volume (~575 total) but a similar arrest proportion to the others.
+By bias motive, the picture diverges markedly:
+
+Anti-Male Homosexual (Gay) crimes have the highest arrest rates across all three boroughs (54–57%). This likely reflects the nature of these incidents — they more often involve direct physical confrontation in identifiable settings, making perpetrators easier to apprehend.
+Anti-Black crimes fall in the middle range (38–46%), varying by borough.
+Anti-Jewish crimes carry the lowest arrest rates (29–40% depending on borough), despite being the overwhelmingly most frequent category. This paradox almost certainly reflects the offense type composition — Anti-Jewish hate crimes disproportionately involve vandalism, graffiti, and verbal harassment, which are inherently harder to prosecute than physical assaults where a perpetrator is present and witnesses exist.
+
+Policy implication: The NYPD's Hate Crime Task Force faces its greatest challenge precisely where the volume is highest. Improving arrest rates for Anti-Jewish crimes likely requires enhanced surveillance of known vandalism hotspots, better forensic follow-through on graffiti cases, and community-based tip infrastructure — rather than simply increased patrol presence.
