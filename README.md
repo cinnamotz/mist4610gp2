@@ -103,6 +103,15 @@ By bias motive, the picture diverges markedly:
 
 Anti-Male Homosexual (Gay) crimes have the highest arrest rates across all three boroughs (54–57%). This likely reflects the nature of these incidents — they more often involve direct physical confrontation in identifiable settings, making perpetrators easier to apprehend.
 Anti-Black crimes fall in the middle range (38–46%), varying by borough.
-Anti-Jewish crimes carry the lowest arrest rates (29–40% depending on borough), despite being the overwhelmingly most frequent category. This paradox almost certainly reflects the offense type composition — Anti-Jewish hate crimes disproportionately involve vandalism, graffiti, and verbal harassment, which are inherently harder to prosecute than physical assaults where a perpetrator is present and witnesses exist.
 
-Policy implication: The NYPD's Hate Crime Task Force faces its greatest challenge precisely where the volume is highest. Improving arrest rates for Anti-Jewish crimes likely requires enhanced surveillance of known vandalism hotspots, better forensic follow-through on graffiti cases, and community-based tip infrastructure — rather than simply increased patrol presence.
+## Tableau Packaged Workbook
+
+![Tableau Workbook](GroupProject2.twbx)
+
+### Additional Tableau Screenshots
+![Data Set 1](Screenshot1.png)
+![Data Set 2](Screenshot2.png)
+![Question 1 Dashboard](Screenshot3.png)
+![Data Set 3](Screenshot4.png)
+![Data Set 4](Screenshot5.png)
+![Question 2 Dashboard](Screenshot6.png)
